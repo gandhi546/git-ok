@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!-- 미리 설정(객체를 미리 만들어 달라) 
+	connectionPool과 유사 : 객체를 미리 pool에 담아 메모리에 올리고, 바로바로 호출
+	<jsp:useBean id="객체명" class="패키지명.클래스명"/> : <bean id="" class="" />
+
+	형식) <bean id="객체를구분하는인자(객체대용)" class="패키지명.클래스명" />
+-->
+	<bean id="messageBean" class="spring_di.Message2" />
+	<!-- <bean id="messageBean" class="spring_di.Message2" /> -->
+
+</beans>
